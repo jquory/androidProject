@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Form"
+        android:id="@+id/input"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/logopolsri" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@+id/image"
+        android:background="#50ffffff"
+        android:hint="Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_emoji_people_24"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/name"
+        android:background="#50ffffff"
+        android:hint="NIM"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_below="@+id/username"
+        android:background="#50ffffff"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:drawablePadding="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/email"
+        android:background="#50ffffff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@id/password"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextDisplay"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/button"
+        />
+
+
+</RelativeLayout>
